@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 10px;
+            background-color: #000;
+        }
+    </style>
+    <script src="./js/jQuery.3.3.1.mini.js"></script>
+    <script>
+        $(function() {
+            $('div').animate({
+                'height': '210px',
+            }, 2000)
+            $('div').on('click', function() {
+                $('div').stop(true, true);
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
